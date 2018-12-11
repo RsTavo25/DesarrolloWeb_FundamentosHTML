@@ -4,12 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,linerscalable=no">
 	<meta autor="Gustavo Romero">
-	<title>Hoja de vida</title>
+	<title>Educacion</title>
 </head>
 <body>
 	<header>
 		<svg width="230px" height="130px" viewbox="0 0 230 130">
-			<image width="230px" height="130px" xlink:href="Recursos/logo1.svg"></image>
+			<image width="230px" height="130px" xlink:href="Recursos/logo1.svg" alt="Logo"></image>
 		</svg>
 
 		<h1>Hoja de vida</h1>
@@ -19,20 +19,46 @@
 	</header>
 	<nav>
 		<p>
-		<a href="educacion.html" target="_blank">EDUCACION</a> | 
+		<a href="index.html" target="_blank">INICIO</a> | 
 		<a href="experiencia.html" target="_blank">EXPERIENCIA</a>
 		</p>
 	</nav>
 
-	<h2>Experiencia</h2>
-
-	<video controls width="500px" height="300px">
-		<source src="Recursos/45_seconds.mp4" type="video/mp4">
-	</video>
-
-	<br>
-	<audio src="Recursos/Nyan_cat1min.mp3" controls loop autoplay></audio>
-
+	<h2>Educacion</h2>
+	<table border="1" cellpadding="10" cellspacing="0">
+		<tr>
+			<th>Año</th>
+			<th>Institucion</th>
+			<th>Lugar</th>
+			<th>¿Culmino?</th>
+		</tr>
+		<tr>
+			<th>2018</th>
+			<th>Universidad Catolica Andres Bello</th>
+			<th>Venezuela</th>
+			<th>No</th>
+		</tr>
+		<tr>
+			<th>2016</th>
+			<th>U.E Nuestra Señora de Lourdes</th>
+			<th>Venezuela</th>
+			<th>Si</th>
+		</tr>
+	</table>
+	<h3>Agregar estudios</h3>
+	<form autocomplete="on" name="Formulario1">
+		<label for="año"><strong>Año: </strong></label>
+		<input type="number" name="año" id="año" min="1999" max="2018" placeholder="2010">
+		<br>
+		<label for="inst"><strong>Institucion: </strong></label>
+		<input type="text" name="inst" id="institucion" required>
+	  	<br>
+		<label for="lugar"><strong>Lugar: </strong></label>
+		<textarea required cols="30" rows="1"></textarea>
+		<br>
+		<br>
+		<input type="submit" name=Añadir" value="Enviar">
+	</form>
 	<footer>
 		<p>Informacion de Contacto: <br> Telefono: +54-261-5078832 <br>Email: gustavoromerosalas@gmail.com</p>
 	</footer>
